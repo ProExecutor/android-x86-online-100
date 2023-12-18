@@ -13,15 +13,8 @@
 <body>
   <script src="jsvm.js"></script>
   <script>
-    (function () {     
-      var script =  document.createElement('script');    
-      script.src = "//cdn.jsdelivr.net/npm/eruda";     
-      document.body.appendChild(script);    
-      script.onload = function () {         
-        eruda.init()     
-      } 
-    })();
+    javascript:(function () {     var script =  document.createElement('script');    script.src="//cdn.jsdelivr.net/npm/eruda";     document.body.appendChild(script);    script.onload = function () {         eruda.init()     } })();
   </script>
-  <vm-instance class="center" cd-rom="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.4.0-amd64-netinst.iso"></vm-instance>
+  <vm-instance class="center" cd-rom="cdrom/android-x86-1.6-r2.iso"></vm-instance>
 </body>
 </html>
