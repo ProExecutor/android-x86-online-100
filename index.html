@@ -13,8 +13,18 @@
 <body>
   <script src="jsvm.js"></script>
   <script>
-    javascript:(function () {     var script =  document.createElement('script');    script.src="//cdn.jsdelivr.net/npm/eruda";     document.body.appendChild(script);    script.onload = function () {         eruda.init()     } })();
+    javascript:(function () {     
+      var script =  document.createElement('script');    
+      script.src="//cdn.jsdelivr.net/npm/eruda";     
+      document.body.appendChild(script);    
+      script.onload = function () {         
+        eruda.init()     
+      } 
+    })();
   </script>
-  <vm-instance class="center" cd-rom="cdrom/android-x86-1.6-r2.iso"></vm-instance>
+  <vm-instance id="vm" class="center"></vm-instance>
+  <script>
+    document.getElementById('vm').setAttribute('cd-rom', 'cdrom/android-x86-1.6-r2.iso');
+  </script>
 </body>
 </html>
